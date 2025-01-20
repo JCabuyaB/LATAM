@@ -1,0 +1,102 @@
+@use 'variables' as v;
+.header{
+    padding-inline: 3.5%;
+    height: 80px;
+    background: v.$color-primary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 11px rgba($color: v.$color-primary, $alpha: .2);
+}
+
+.header-logo{
+    display: inline-block;
+    &__icon{
+        width: 105px;
+    }
+}
+
+// menu
+.main-nav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .main-nav-arrow{
+        rotate: 90deg;
+        width: 15px;
+    }
+}
+
+.login-region{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+    .info-nav{
+        margin-right: 20px;
+        display: flex;
+        gap: 15px;
+        &__anchor{
+            display: flex;
+            align-items: center;
+            color: v.$color-white;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: 600;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        .info-nav-arrow{
+            margin-left: 4px;
+            width: 15px;
+        }
+    }
+
+    .region{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        &__icon{
+            width: 30px;
+        }
+        &__currency{
+            font-size: 14px;
+            color: v.$color-white;
+            font-weight: 600;
+        }
+    }
+}
+
+// nav buttons
+.nav-button{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: .5rem .9rem;
+    border: none;
+    border-radius: 200px;
+    font-size: 15px;
+    font-weight: 600;
+    background: transparent;
+    transition: .1s background ease;
+    cursor: pointer;
+    color: v.$color-white;
+    &:hover{
+        background: v.$color-soft-white;
+    }
+    &--margin{
+        margin-left: 40px;
+    }
+
+    &--login{
+        margin-left: 20px;
+        background: v.$color-soft-white;
+        border: 1px inset transparent;
+        &:hover{
+            border: 1px inset #fff;
+        }
+    }
+}
