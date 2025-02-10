@@ -42,7 +42,7 @@
 
             <span class="region">
                 <img class="region__icon" src="img/co.png" alt="flag">
-                <span class="region__currency">COP &middot; $; </span>
+                <span class="region__currency">COP &middot; $</span>
             </span>
 
             <button class="nav-button nav-button--login" role="link">
@@ -50,9 +50,75 @@
             </button>
         </div>
     </header>
+
+    <section class="banner">
+        <div class="schedule-selection">
+            <div class="row-buttons">
+                <button class="white-button white-button--active">Vuelos</button>
+                <button class="white-button">Paquetes</button>
+                <button class="white-button">Alojamientos</button>
+                <button class="white-button">Carros</button>
+                <button class="white-button">Asistencia en viaje</button>
+                <button class="white-button">Upgrade</button>
+            </div>
+            <form class="schedule-data-container">
+                <div class="schedule-specs">
+                    <button class="schedule-btn" id="tipo-vuelo">Ida y Vuelta
+                        <span class="schedule-btn__arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="schedule-btn" id="cabina">Economy
+                        <span class="schedule-btn__arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="schedule-btn" id="pasajero">1 Pasajero
+                        <span class="schedule-btn__arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="schedule-btn-chk-container">
+                        <div class="schedule-checkbox">
+                            <input class="schedule-checkbox__chk" type="checkbox" name="alternative" id="millas-dinero">
+                            <!-- agregar icono cheked -->
+                        </div>
+                        <label class="schedule-btn-chk-container__text" for="millas-dinero">
+                            Usa tus <span class="schedule-btn__bold">millas + dinero</span>
+                        </label>
+                    </div>
+                    
+                </div>
     
-    <div class="fly-banner" role="banner">
-        
-    </div>
+                <div class="schedule-inputs">
+                    <input class="schedule-inputs__input" type="text" name="origin" id="origen" placeholder="Origen">
+                    <input class="schedule-inputs__input" type="text" name="destiny" id="destino" placeholder="Destino">
+    
+                    <!-- ida y vuelta -->
+                    <!-- <div class="group-dates">
+                        <button class="date-btn"><span class="date-btn__blue">Ida</span>Fecha</button>
+                        <button class="date-btn"><span class="date-btn__blue">Vuelta</span>Fecha</button>
+                    </div> -->
+                    <div class="group-dates group-dates--one-way">
+                        <button class="date-btn"><span class="date-btn__blue">Ida</span>Fecha</button>
+                    </div>
+    
+                    <div class="form-group">    
+                        <button class="schedule-inputs__btn">Buscar</button>
+                    </div>
+                </div>
+          </form>
+        </div>
+    
+        <div class="banner-discount">
+    
+        </div>
+    </section>
 </body>
 </html>
